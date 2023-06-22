@@ -2,11 +2,14 @@ import React from 'react'
 import TopNavBar from './TopNavBar';
 import { Container, Grid, Typography, Button, Box } from '@mui/material';
 import Workout from "../images/workout.gif";
+import MiniDrawer from './SideNavBar';
+import MainAppBar from './MainNavBar';
 
 const HomePage = () => {
   return (
     <>
-    <TopNavBar />
+    {/* <TopNavBar /> */}
+    <MainAppBar></MainAppBar>
     <Typography variant='h1' sx={{
       color: "#000",
 
@@ -19,6 +22,8 @@ const HomePage = () => {
         minHeight: '600px', 
         alignItems: 'center', 
         justifyContent: 'center'}}>
+
+          <MiniDrawer></MiniDrawer>
             
       <Grid container spacing={6} sx={{
         display: 'flex', 
